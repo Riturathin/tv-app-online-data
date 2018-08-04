@@ -1,0 +1,17 @@
+.autocomplete-box {
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 10px 0;
+  text-align: left;
+  border-radius: 5px;
+}
+.autocomplete-box li {
+	border-bottom: 1px solid #ccc;
+	padding: 2px 10px;
+}
+
+.autocomplete-box li:hover {
+	background: #1bb1e7;
+	color: #fff;
+	cursor: pointer;
+}

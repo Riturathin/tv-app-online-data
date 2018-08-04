@@ -1,0 +1,19 @@
+.show-title {
+	background: #1bb1e7;
+	color: #fff;
+	padding: 5px;
+	text-decoration: none;
+	margin-bottom: 0;
+}
+
+.show-container:hover{
+	text-decoration: none;
+}
+
+.show-container hr {
+	margin: 0;
+}
+
+.show-container {
+	margin-bottom: 15px;
+}
