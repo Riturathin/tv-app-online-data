@@ -15,7 +15,10 @@ class Main extends React.Component {
 			<div>
 				<Switch>
 					<Route path='/' exact component={ Shows } />
-					<Route path='/show/:topicId' exact component={ ShowDetails } />
+					<Route path='/show/:topicId' exact 
+						render={props=>
+							<ShowDetails key={props.match.params.topicId} {...props} />
+						} />
 					<Route component={ Error404 } />
 				</Switch>
 			</div>

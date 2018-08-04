@@ -29,9 +29,9 @@ class ShowDetails extends React.Component {
 		this.fetchShowData()
 	}
 
-	componentWillUpdate(nextProps) {
-   	this.fetchShowData()
-	}
+	// componentWillUpdate(nextProps) {
+ //   	this.fetchShowData()
+	// }
 
 	render() {
 		const locationPath = getLocationOffset( this.props.location.pathname )
