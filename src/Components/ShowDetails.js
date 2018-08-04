@@ -41,7 +41,7 @@ class ShowDetails extends React.Component {
 				<div className=''>
 					<div className='col-xs-12'>
 						{ Object.keys(this.state.showdetails).length === 0 ? null : 
-							 <Show details={ this.state.showdetails }  />
+							<Show details={ this.state.showdetails }  />
 						}
 					</div>
 				</div>

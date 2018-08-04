@@ -1,7 +1,8 @@
 import React from 'react';
 import Shows from './Shows';
 import ShowDetails from './ShowDetails';
-import { Route } from 'react-router-dom';
+import Error404 from './Error404';
+import { Route, Switch } from 'react-router-dom';
 
 class Main extends React.Component {
 
@@ -12,8 +13,11 @@ class Main extends React.Component {
 	render() {
 		return (
 			<div>
-				<Route path='/' exact component={ Shows } />
-				<Route path='/show/:topicId' exact component={ ShowDetails } />
+				<Switch>
+					<Route path='/' exact component={ Shows } />
+					<Route path='/show/:topicId' exact component={ ShowDetails } />
+					<Route component={ Error404 } />
+				</Switch>
 			</div>
 		);
 	}
