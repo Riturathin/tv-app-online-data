@@ -3,6 +3,7 @@ import Shows from './Shows';
 import ShowDetails from './ShowDetails';
 import Error404 from './Error404';
 import { Route, Switch } from 'react-router-dom';
+import '../Stylesheets/Main.css'
 
 class Main extends React.Component {
 
@@ -12,7 +13,7 @@ class Main extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className='main-component'>
 				<Switch>
 					<Route path='/' exact component={ Shows } />
 					<Route path='/show/:topicId' exact 

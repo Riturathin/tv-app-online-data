@@ -4,6 +4,7 @@
   padding: 10px 0;
   text-align: left;
   border-radius: 5px;
+  background: #fff;
 }
 .autocomplete-box li {
 	border-bottom: 1px solid #ccc;
@@ -14,4 +15,8 @@
 	background: #1bb1e7;
 	color: #fff;
 	cursor: pointer;
+}
+
+.autocomplete-box li a:hover {
+	color: #fff;
 }

@@ -50,13 +50,13 @@ class Search extends React.Component {
 		return (
 			<div className='col-xs-12'>
 				<form className='form-group' onSubmit={ this.handleSubmitQuery.bind( this ) }>
-					<div className='row'>
+					<div className='col-xs-12'>
 						<div className='col-xs-9'>
 							<input className='form-control' placeholder='Search...' onChange={ this.handleQueryChange.bind(this)} />
 						</div>
-						<div className='col-xs-3'>
+						{/*<div className='col-xs-3'>
 							<button className='btn btn-primary'>GO</button>
-						</div>
+						</div>*/}
 					</div>
 				</form>
 
