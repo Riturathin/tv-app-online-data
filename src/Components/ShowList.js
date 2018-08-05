@@ -11,6 +11,7 @@ class ShowList extends React.Component {
 	render() {
 		return (
 			<div className='row'>
+				<pre>{ JSON.stringify(this.props.showdetails)}</pre>
 				<a href={ this.props.showdetails.url } className='show-container'>
 					<img className='img-border img-thumbnail'
 						src={ this.props.showdetails.image.medium } />
