@@ -29,16 +29,15 @@ class Search extends React.Component {
 			}
 		})
 		.then( response => {
-			this.setState({
-				isAutocompleteDisplayed: true,
-				autocompleteShows: response.data
-			})
+				this.setState({
+					isAutocompleteDisplayed: true,
+					autocompleteShows: response.data
+				})
 		})
 		.catch( (err) => new Error(err) )
 	}
 
 	handleAutocompleteClick () {
-		debugger
 		const { isAutocompleteDisplayed } = this.state
 		this.setState({
 			isAutocompleteDisplayed: false 
@@ -62,8 +61,12 @@ class Search extends React.Component {
 
 				{ this.state.isAutocompleteDisplayed ?  
 					(<ul className='autocomplete-box' onClick={ this.handleAutocompleteClick.bind(this)}>
+						{ 
+						this.state.autocompleteShows.length === 0 && 
+							<li>No results found!</li>
+						}
 					 { 
-						this.state.autocompleteShows && this.state.autocompleteShows.map( (item, index) =>{
+						this.state.autocompleteShows.length > 0 && this.state.autocompleteShows.map( (item, index) =>{
 							return <ShowSearchAutocomplete 
 													onClick={ this.handleAutocompleteClick.bind(this)}
 													details={item} 

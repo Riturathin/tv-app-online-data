@@ -56,7 +56,7 @@ class Show extends React.Component {
 					</div>
 				
 
-				<RecommendedList genre={ this.props.details.genres[0] }/>
+				<RecommendedList genre={ this.props.details.type }/>
 			</div>
 		);
 	}
